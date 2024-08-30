@@ -150,7 +150,7 @@ class Bomb(object):
 
 if __name__ == '__main__':
     # 手机号列表，如 ["12345678987","98765432123"]
-    phoneList=[]
+    phoneList=["15083793986"]
     bombNum=1
     while True: # 死循环
         currTime=0
@@ -174,6 +174,6 @@ if __name__ == '__main__':
                         x.setintervalInfo(x.getInterval())
                     else:
                         x.setintervalInfo(x.getintervalInfo() - 1)
-                time.sleep(5) #设置两次轰炸的间隔时间，单位是秒
+                time.sleep(3) #设置两次轰炸的间隔时间，单位是秒
                 if i==len(APIList):
                     break
